@@ -575,3 +575,14 @@ body.theme-luka .service-list p{margin:0;font-size:13px}
 body.theme-luka .location{display:inline-block;margin-top:8px;font-size:11px}
 @media(max-width:760px){body.theme-luka .nav-links{display:none}body.theme-luka .projects-grid{grid-template-columns:1fr}body.theme-luka .pub-row{grid-template-columns:112px minmax(0,1fr);gap:13px}body.theme-luka .pub-image{width:112px;height:auto}}
 @media(max-width:520px){body.theme-luka .cta-row{align-items:flex-start;flex-direction:column;gap:12px}body.theme-luka .publications ol.bibliography li{padding:14px}body.theme-luka .pub-row{display:block}body.theme-luka .pub-image{width:100%;height:auto;margin-bottom:12px}body.theme-luka .service-list>div{grid-template-columns:68px 1fr}}
+
+/* Georgia small caps for headings, personal name, and institution names. */
+body.theme-luka .section-title,
+body.theme-luka .pub-content .title,
+body.theme-luka .site-name,
+body.theme-luka .nav-left a,
+body.theme-luka .pub-content .author strong,
+body.theme-luka .site-affiliation,
+body.theme-luka .exp-title strong {
+  font-variant-caps: small-caps;
+}
