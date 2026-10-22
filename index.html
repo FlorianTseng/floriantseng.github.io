@@ -19,7 +19,6 @@
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
   <link rel="stylesheet" href="assets/css/theme-luka.css">
-  <link rel="stylesheet" href="assets/css/parchment-courier.css">
 </head>
 <body class="theme-luka">
   <nav class="top-nav" aria-label="Main navigation"><div class="nav-container">
@@ -112,7 +111,7 @@
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
       }
       const savedTheme = localStorage.getItem('theme');
-      setTheme(savedTheme ? savedTheme === 'dark' : false);
+      setTheme(savedTheme ? savedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
       themeToggle.addEventListener('click', function () { setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'); });
       if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver(function (entries) { entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.06 });
