@@ -31,7 +31,7 @@
 | 学术时间线 | `Education`、`Experience` |
 | 展示区 | `Projects`、`Publications`、`Awards` |
 | 体验细节 | 深色模式、轻量动画、响应式布局 |
-| 可替换资源 | 头像、机构 Logo、favicon、CV 链接 |
+| 可替换资源 | 头像、机构 Logo、favicon |
 
 ## 快速开始
 
@@ -59,7 +59,6 @@
 - 头像：替换 `assets/img/avatar.svg`
 - 机构 Logo：替换 `assets/img/institution.svg`
 - favicon：替换 `assets/img/favicon.svg`
-- 简历：修改 `index.html` 中的 `Download my CV` 链接
 
 ### 4. 部署到 GitHub Pages
 
@@ -81,7 +80,6 @@
     ├── css
     │   ├── font_sans_serif.css
     │   └── theme-luka.css
-    ├── cv
     ├── img
     └── js
         └── scale.fix.js
