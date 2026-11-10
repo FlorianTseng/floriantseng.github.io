@@ -134,21 +134,30 @@ body.theme-luka .theme-toggle:hover {
 
 body.theme-luka .wrapper {
   width: 100%;
-  max-width: 840px;
+  max-width: 1120px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   min-height: 100vh;
 }
 
 body.theme-luka .sidebar {
-  width: 100%;
-  position: static;
+  width: 320px;
+  flex-shrink: 0;
+  position: fixed;
+  top: 60px;
+  left: calc(50% - 560px);
+  height: calc(100vh - 60px);
+  overflow-y: hidden;
   text-align: center;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 60px;
+  z-index: 100;
 }
 
 body.theme-luka .profile-card {
@@ -237,8 +246,10 @@ body.theme-luka .visitor-card-body {
 }
 
 body.theme-luka .content {
+  flex: 1;
   min-width: 0;
-  padding: 0 0 80px;
+  margin-left: 320px;
+  padding: 120px 40px 80px 60px;
 }
 
 body.theme-luka .section {
