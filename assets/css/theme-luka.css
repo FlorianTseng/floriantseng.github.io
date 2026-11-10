@@ -145,19 +145,14 @@ body.theme-luka .wrapper {
 body.theme-luka .sidebar {
   width: 320px;
   flex-shrink: 0;
-  position: fixed;
-  top: 60px;
-  left: calc(50% - 560px);
-  height: calc(100vh - 60px);
-  overflow-y: hidden;
+  position: static;
   text-align: center;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
-  z-index: 100;
+  padding-top: 120px;
 }
 
 body.theme-luka .profile-card {
@@ -248,7 +243,7 @@ body.theme-luka .visitor-card-body {
 body.theme-luka .content {
   flex: 1;
   min-width: 0;
-  margin-left: 320px;
+  margin-left: 0;
   padding: 120px 40px 80px 60px;
 }
 
